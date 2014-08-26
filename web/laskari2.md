@@ -1,8 +1,7 @@
 # Laskari 2
 
-## Huom: ohjausta tehtävien tekoon to klo 14-16 ja pe klo 14-16 salissa BK107
 
-### Tehtävien palautuksen deadline su 23.3. klo 23.59
+### Tehtävien palautuksen deadline XX XX.XX
 
 ## palautetaan GitHubin kautta
 
@@ -13,14 +12,14 @@
 
 ## 1. riippuvuuksien injektointi osa 1
 
-* lue ensin tiistain luennolla nopeasti läpikäytyjen asioiden kertaus [https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md](https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md)
-* hae koodiesimerkit repostitoriosta [https://github.com/mluukkai/ohtu2014/](https://github.com/mluukkai/ohtu2014/) (hakemistosta viikko2/RiippuvuuksienInjektointi) ja kokeile että kaikki toimivat
+* lue ensin tiistain luennolla nopeasti läpikäytyjen asioiden kertaus [https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md)
+* hae koodiesimerkit repostitoriosta [https://github.com/mluukkai/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) (hakemistosta viikko2/RiippuvuuksienInjektointi) ja kokeile että kaikki toimivat
 * järkevintä lienee että kloonaat repositorion paikalliselle koneellesi
   * vaikka viime viikolla sama repositorio forkattiin, ei forkattua repositorioa saa ihan helposti synkronoitua alkuperäiseen
 
 ## 2. riippuvuuksien injektointi osa 2: NHL-tilastot
 
-* repositorion [https://github.com/mluukkai/ohtu2014/](https://github.com/mluukkai/ohtu2014/) hakemistossa viikko2/Ohtu-NHLStatistics1 on ohjelma, jonka avulla on mahdollista tutkia [http://nhl.com](http://nhl.com)-sivulla olevia pelaajien tilastotietoja
+* repositorion [https://github.com/hy-tktl/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) hakemistossa viikko2/Ohtu-NHLStatistics1 on ohjelma, jonka avulla on mahdollista tutkia [http://nhl.com](http://nhl.com)-sivulla olevia pelaajien tilastotietoja
 
 * Ohjelma koostuu kolmesta luokasta.
   * <code>Statistics</code> on palvelun tarjoava luokka, se tarjoaa metodit yhden pelaajan tietojen näyttämiseen, pistepörssin näyttämiseen ja yhden joukkueen pelaajien tietojen näyttämiseen
@@ -193,7 +192,7 @@ Virheen syynä on se, että githubissa oleva __master__-haara oli edellä paikal
 
 ## 8. riippuvuuksien injektointi osa 3: Verkkokauppa
 
-Repositorion [https://github.com/mluukkai/ohtu2014/](https://github.com/mluukkai/ohtu2014/) hakemistossa viikko2/Verkkokauppa1 on yksinkertaisen verkkokaupan ohjelmakoodi
+Repositorion [https://github.com/hy-tktl/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) hakemistossa viikko2/Verkkokauppa1 on yksinkertaisen verkkokaupan ohjelmakoodi
 
 * tutustu koodiin, piirrä luokkakaavio ohjelman rakenteesta
 * ohjelman luokista <code>Pankki</code>, <code>Varasto</code>, <code>Viitegeneraattori</code> ja <code>Kirjanpito</code> ovat sellaisia, että niistä on tarkoitus olla olemassa vain yksi olio. Tälläisiä ainutkertaisia olioita sanotaan **singletoneiksi**. Koodissa singletonit ovat toteutettu "klassisella tavalla"
@@ -242,7 +241,7 @@ Kuten huomaamme, alkaa kaupan konfigurointi olla aika vaivalloista...
 
 Spring tarjoaa pelastuksen käsillä olevaan tilanteeseen.
 
-Lue nyt [sivu](https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md) Riippuvuuksien-injektointi kohdasta [Dependency injection Spring-sovelluskehyksessä](https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md#dependency-injection-spring-sovelluskehyksess%C3%A4) loppuun asti
+Lue nyt [sivu](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md) Riippuvuuksien-injektointi kohdasta [Dependency injection Spring-sovelluskehyksessä](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md#dependency-injection-spring-sovelluskehyksess%C3%A4) loppuun asti
 
 *  projektiin on konfiguroitu valmiiksi springin tarvitsemat riippuvuudet, konfiguraatiotiedosto <code>spring-context.xml</code> löytyy hakemiston _src/main/resources_ alta (NetBeansissa tämä löytyy kohdan Other Sources -alta)
   * *HUOM* mahdolliset virheilmoitukset __"org.springframework... package does not exist"__ katoavat kun buildaat projektin ensimmäisen kerran!
@@ -279,8 +278,8 @@ Kannattanee edetä tehtävässä pienin askelin siirtäen yksi luokka kerrallaan
 
 tehtävien kirjaus:
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 23.3. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline on XX XX.XX
 
 palaute tehtävistä:
 
