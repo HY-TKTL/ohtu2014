@@ -4,7 +4,7 @@
 
 ## palautetaan GitHubin kautta
 
-* palautusta varten tarvitaan yksityinen repositorio, jolla collaboratorina käyttäjä mluukkai
+* palautusta varten tarvitaan yksityinen repositorio, jolla collaboratorina käyttäjät josalmi ja ljleppan
   * kannattaa käyttää samaa repoa kuin viikon 2 tehtävissä
 * palautusrepositorion nimi ilmoitetaan tehtävien lopussa olevalla palautuslomakkeella
 
