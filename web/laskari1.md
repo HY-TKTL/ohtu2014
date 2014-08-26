@@ -1,8 +1,6 @@
 # Laskari 1
 
-## Huom: ohjausta tehtävien tekoon to klo 14-16 ja pe klo 14-16 salissa BK107
-
-### Tehtävien palautuksen deadline su 16.3. klo 23.59
+### Tehtävien palautuksen deadline XX klo XX.XX
 
 ## Miten viikon 1 tehtävät palautetaan?
 
@@ -22,7 +20,7 @@ Luo repositorio nimellä ohtu-viikko1
 * klikkaa yläpalkin oikeassa reunassa olevaa  "Create a new repo"-ikonia 
 * **laita rasti** kohtaan Initialize this repository with a README 
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko1-1.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko1-1.png)
 
 Hae akateemista tunnusta, näin saat käyttöösi (ilmaiseksi) yksityisiä repositorioita
 
@@ -51,7 +49,7 @@ Kloonaa nyt githubiin tehty repositorio **paikalliselle koneelle**. Tämä tapah
 
 missä komennon <code>git clone</code> parametrina on repositorioosi sivulta selviävä 'clone URL' (huomaa, että formaatin on oltava SSH):
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko1-2.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko1-2.png)
 
 Nyt paikalliselle koneellesi syntynyt hakemisto <code>ohtu-viikko1</code> joka on on githubissa olevan repositorion klooni.
 
@@ -109,7 +107,7 @@ Luodaan nyt paikalliselle koneelle repositoriosta toinen klooni:
 
 
 
-* hae osoitteesta https://github.com/mluukkai/ohtu2014/blob/master/viikko1/OhtuVarasto.zip?raw=true löytyvä zipattu paketti, pura se kloonattuun repositorioon
+* hae osoitteesta https://github.com/hy-tktl/ohtu2014/blob/master/viikko1/OhtuVarasto.zip?raw=true löytyvä zipattu paketti, pura se kloonattuun repositorioon
 * lisää .gitignore-tiedostoosi hakemisto _OhtuVarasto/target/_
   * huom: hakemistoa ei vielä ole olemassa
 * lisää ja committoi zipistä purettu hakemisto repositorioon ja pushaa se GitHubiin
@@ -214,7 +212,7 @@ Luodaan ensimmäinen "build job" ja määritellään se kääntämään ja testa
 
 * Varmista ensin, että Jenkins on sivun autorefreshaavassa moodissa:
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko1-4.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko1-4.png)
 
 * valitse *new item* ja *free style software project*
   * nimeä projekti muodossa **<käyttäjätunnus>-viikko1**
@@ -225,7 +223,7 @@ Luodaan ensimmäinen "build job" ja määritellään se kääntämään ja testa
   * valitse *git*
   * laita kohtaan *Repository URL* GitHubista projektin kohdalta löytyvä *HTTPS clone URL* (**Katso ao. kuva**)
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko1-3.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko1-3.png)
 
 * Build
   * *add build step -> invoke top-level maven targets*
@@ -305,7 +303,7 @@ Parempi tapa on määritellä GitHub kertomaan Jenkinssille aina kun projektiin 
 * lisää tähän Jenkins-projektisi buildin triggeröivä url kohtaan *payload url*
 * tee muutos projektiisi ja varmista että Jenkins reagoi
 
-## 11. Forkaa repositorio https://github.com/mluukkai/ohtu2014
+## 11. Forkaa repositorio https://github.com/hy-tktl/ohtu2014
 
 * forkkaaminen tapahtuu seuraavasti:
   * kun olet kirjautuneena GitHubiin, mene yo. osoitteeseen
@@ -325,5 +323,5 @@ Parempi tapa on määritellä GitHub kertomaan Jenkinssille aina kun projektiin 
 
 ** Jos olet tehnyt Jenkins-tehtävät, muista että github-repositoriosi readme.MD-tiedostossa tulee olla linkki projektisi Jenkins-sivulle!**
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 16.3. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline on XX klo XX.XX
