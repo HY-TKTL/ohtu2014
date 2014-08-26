@@ -1,8 +1,6 @@
 # Laskari 3
 
-## Huom: ohjausta tehtävien tekoon to klo 14-16 ja pe klo 14-16 salissa BK107
-
-### Tehtävien palautuksen deadline su 30.3. klo 23.59
+### Tehtävien palautuksen deadline XX XX.XX
 
 ## palautetaan GitHubin kautta
 
@@ -24,7 +22,7 @@ mene nyt johonkin valmiiseen projektiisi, esim. viikon 2 verkkokauppaan
 * oletusarvoisesti raportoidaan paljon kaikenlaista ja oleellinen uhkaa hukkua detaljien joukkoon
 
 checkstylen tarkkailemien virheiden joukko on konfiguroitavissa erillisen koniguraatiotiedoston avulla
-* hae repositiorion [https://github.com/mluukkai/ohtu2014/](https://github.com/mluukkai/ohtu2014/) hakemistosta viikko3 konfiguraatiotiedoston pohja __my_checks.xml__, talleta se sopivaan paikkaan, kokeile:
+* hae repositiorion [https://github.com/hy-tktl/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) hakemistosta viikko3 konfiguraatiotiedoston pohja __my_checks.xml__, talleta se sopivaan paikkaan, kokeile:
         <code>mvn jxr:jxr checkstyle:checkstyle -Dcheckstyle.config.location=my_checks.xml</code>       
 * komennossa oleva polku olettaa että konfiguraatiotiedosto sijaitsee projektihakemiston juuressa
   * saattaa olla, että windowsissa komentoon on lisättävä pari hipsua: <code>mvn jxr:jxr checkstyle:checkstyle -D"checkstyle.config.location=my_checks.xml"</code>  
@@ -73,7 +71,7 @@ Käynnistetään ensin Sonar
 
 Generoidaan raportti muutamalle projektille
 * maven-muotoisille projekteille raportti generoidaan antamalla projektin hakemistossa komento <code>mvn clean test sonar:sonar</code>
-* generoi raportti viikon 2 laskarien verkkokaupalle ja repositiorion [https://github.com/mluukkai/ohtu2014/](https://github.com/mluukkai/ohtu2014/) viikon 3 hakemistostosta löytyvälle KumpulaBiershop olutverkkokaupalle
+* generoi raportti viikon 2 laskarien verkkokaupalle ja repositiorion [https://github.com/hy-tktl/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) viikon 3 hakemistostosta löytyvälle KumpulaBiershop olutverkkokaupalle
   * huomaa, että Sonar pitää olla käynnistettynä raportin generointihetkellä!
 * tutki raportteja
   * katso erityisesti mitä löytyy kohdan __Tools__ alta
@@ -84,10 +82,10 @@ Sivulta [http://nemo.sonarsource.org](http://nemo.sonarsource.org) löytyy useid
 
 ## 3. tutustuminen easyB:hen
 
-Lue seuraava [https://github.com/mluukkai/ohtu2014/blob/master/web/easyb.md](https://github.com/mluukkai/ohtu2014/blob/master/web/easyb.md)
+Lue seuraava [https://github.com/hy-tktl/ohtu2014/blob/master/web/easyb.md](https://github.com/hy-tktl/ohtu2014/blob/master/web/easyb.md)
 
 tutustu linkin takana olevan ohjelman rakenteeseen ja aja siihen liittyvään testit.
-* käynnistä ohjelma <code>mvn exec ...</code> -komennolla (ks. [viikon 1 laskarit](https://github.com/mluukkai/ohtu2014/blob/master/web/laskari1.md#5-maven))
+* käynnistä ohjelma <code>mvn exec ...</code> -komennolla (ks. [viikon 1 laskarit](https://github.com/hy-tktl/ohtu2014/blob/master/web/laskari1.md#5-maven))
 * ohjelman tuntemat komennot ovat __login__ ja __new__
 
 ## 4. Kirjautumisen testit
@@ -130,7 +128,7 @@ public static void main(String[] args) {
 }
 ```
 
-Ohjeita löytyy viikon 2 laskareiden [lisämateriaalista](https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md#dependency-injection-spring-sovelluskehyksess%C3%A4)
+Ohjeita löytyy viikon 2 laskareiden [lisämateriaalista](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md#dependency-injection-spring-sovelluskehyksess%C3%A4)
 
 ## 7. FileUserDAO
 
@@ -146,8 +144,8 @@ Jos teit edellisen tehtävän, muokkaa Spring-konfiguraatiosi ottamaan huomioon 
 
 tehtävien kirjaus:
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 30.3. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline on XX XX.XX
 
 palaute tehtävistä:
 
