@@ -2,7 +2,7 @@
 
 Lue ensin [http://jamesshore.com/Blog/Dependency-Injection-Demystified.html](http://jamesshore.com/Blog/Dependency-Injection-Demystified.html)
 
-Allaolevat koodiesimerkit löytyvät maven-muotoisina projekteina [täältä](https://github.com/mluukkai/ohtu2014) (hakemistossa viikko2)
+Allaolevat koodiesimerkit löytyvät maven-muotoisina projekteina [täältä](https://github.com/hy-tktl/ohtu2014) (hakemistossa viikko2)
 
 Luennolla esiteltiin yksinkertainen laskin:
 
@@ -184,7 +184,7 @@ Esimerkkimme tapauksessa konfigurointi on helppoa. Isommissa ohjelmissa konfigur
 
 [Spring-sovelluskehys](http://www.springsource.org/) tarjoaa mahdollisuuden olioiden konfigurointiin erillisten konfiguraatiotiedostojen avulla.
 
-Spring saadaan käyttöön lisäämällä sopivat riippuvuudet maven-projektin määrittelemään pom.xml-tiedostoon, katso tarkemmin projektista [https://github.com/mluukkai/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi2](https://github.com/mluukkai/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi2)
+Spring saadaan käyttöön lisäämällä sopivat riippuvuudet maven-projektin määrittelemään pom.xml-tiedostoon, katso tarkemmin projektista [https://github.com/hy-tktl/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi2](https://github.com/hy-tktl/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi2)
 
 Springissä konfigurointi tehdään xml-tiedostoon:
 
@@ -256,7 +256,7 @@ Jos haluttaisiin, että jokaisella <code>getBean</code>-pyynnöllä syntyy uusi 
 
 ### Springin konfigurointi annotaatioilla
 
-Esimerkkiprojekti [https://github.com/mluukkai/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi3](https://github.com/mluukkai/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi3) esittelee vaihtoehtoisen tavan konfiguroida Springin hallinnoimia oliota. Konfiguraatiotiedosto on nyt muotoa
+Esimerkkiprojekti [https://github.com/hy-tktl/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi3](https://github.com/hy-tktl/ohtu2014/tree/master/viikko2/RiippuvuuksienInjektointi3) esittelee vaihtoehtoisen tavan konfiguroida Springin hallinnoimia oliota. Konfiguraatiotiedosto on nyt muotoa
 
 ``` java
 <?xml version="1.0" encoding="UTF-8"?>

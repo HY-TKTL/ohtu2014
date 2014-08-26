@@ -1,8 +1,6 @@
 # Laskari 6
 
-## Huom: ohjausta tehtävien tekoon to klo 15-17 ja pe klo 14-16 salissa BK107
-
-### Tehtävien palautuksen deadline vasta **su 4.5. klo 23.59**
+### Tehtävien palautuksen deadline vasta XX XX.XX
 
 ## palautetaan GitHubin kautta
 
@@ -16,7 +14,7 @@ Useimmissa viikon tehtävistä voi ja kannattaakin hyödyntää Java 8:ia. Jos h
 
 ## 1. Laskin ja komento-oliot
 
-Repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistosta __viikko6/Laskin__ löytyy hieman modifioitu versio Ohjelmoinnin jatkokurssin viikon 5 [tehtävästä](https://www.cs.helsinki.fi/group/java/s2013-ohpe/ohja/viikko11/#147laskin).
+Repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistosta __viikko6/Laskin__ löytyy hieman modifioitu versio Ohjelmoinnin jatkokurssin viikon 5 [tehtävästä](https://www.cs.helsinki.fi/group/java/s2013-ohpe/ohja/viikko11/#147laskin).
 
 Sovellusta on laajennettu lisäämällä siihen painike _undo_-toiminnallisuutta varten, undoa ei kuitenkaan ole vielä toteutettu.
 
@@ -55,7 +53,7 @@ Sovelluksen varsinainen toimintalogiikka on luokassa <code>Tapahtumankuuntelija<
     }
 ```
 
-Refaktoroi koodi iffittömäksi luennolla 8 esiteltyä suunnittelumallia [komento-olio](https://github.com/mluukkai/ohtu2014/blob/master/web/luento8.md#laskin-ja-komento-olio) käyttäen.
+Refaktoroi koodi iffittömäksi luennolla 8 esiteltyä suunnittelumallia [komento-olio](https://github.com/hy-tktl/ohtu2014/blob/master/web/luento8.md#laskin-ja-komento-olio) käyttäen.
 
 Tässä tehtävässä ei tarvitse vielä toteuttaa undo-komennon toiminnallisuutta!
 
@@ -114,7 +112,7 @@ Riittää että ohjelma muistaa edelliseksi suoritetun komennon, eli undo-toimin
 
 *HUOM* tässä ja osassa muissakin viikon tehtävissä oli aluksi vahingossa puutteellinen __pom.xml__-tiedosto (build-pluginia ei oltu määritelty). Varmista, että tiedosto on kunnossa ennen kuin teet tehtävää!
 
-* repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistosta __laskari6/IntJoukkoSovellus__ aloittelevan ohjelmoijan ratkaisu syksyn 2011 Ohjelmoinnin Jatkokurssin viikon 2 tehtävään 3 (ks. [http://www.cs.helsinki.fi/u/wikla/ohjelmointi/jatko/s2011/harjoitukset/2/](http://www.cs.helsinki.fi/u/wikla/ohjelmointi/jatko/s2011/harjoitukset/2/))
+* repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistosta __laskari6/IntJoukkoSovellus__ aloittelevan ohjelmoijan ratkaisu syksyn 2011 Ohjelmoinnin Jatkokurssin viikon 2 tehtävään 3 (ks. [http://www.cs.helsinki.fi/u/wikla/ohjelmointi/jatko/s2011/harjoitukset/2/](http://www.cs.helsinki.fi/u/wikla/ohjelmointi/jatko/s2011/harjoitukset/2/))
 ** ratkaisussa joukko-operaatiot on toteutettu suoraan luokkaan IntJoukko staattisina metodeina
 * koodi jättää hieman toivomisen varaa ylläpidettävyyden suhteen
 * refaktoroi luokan IntJoukko koodi mahdollisimman siistiksi
@@ -128,7 +126,7 @@ Riittää että ohjelma muistaa edelliseksi suoritetun komennon, eli undo-toimin
 
 ## 4. Tenniksen pisteenlaskun refaktorointi
 
-Repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistosta __viikko6/Tennis__ löytyy ohjelma joka on tarkoitettu tenniksen [pisteenlaskentaan](https://github.com/emilybache/Tennis-Refactoring-Kata#tennis-kata).
+Repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistosta __viikko6/Tennis__ löytyy ohjelma joka on tarkoitettu tenniksen [pisteenlaskentaan](https://github.com/emilybache/Tennis-Refactoring-Kata#tennis-kata).
 
 Pisteenlaskennan rajapinta on yksinkertainen. Metodi <code>void getScore()</code> kertoo voimassa olevan tilanteeen tennispisteenlaskennan määrittelemän tavan mukaan. Sitä mukaa kun jompi kumpi pelaajista voittaa palloja, kutsutaan metodia  <code>void wonPoint(String player)</code> jossa parametrina on pallon voittanut pelaaja.
 
@@ -184,7 +182,7 @@ Lisää samantapaisia refaktorointitehtäviä osoitteessa [https://github.com/em
 
 ## 5. Kyselykieli NHLStatistics-ohjelmaan
 
-Repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistosta __viikko6/QueryLanguage__ löytyy jälleen yksi versio tutusta NHL-tilastoja lukevasta ohjelmasta.
+Repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistosta __viikko6/QueryLanguage__ löytyy jälleen yksi versio tutusta NHL-tilastoja lukevasta ohjelmasta.
 
 Tällä kertaa olemme kiinnostuneita tekemään hieman monimutkaisempia "kyselyjä" pelaajatietoihin, esim. __listaa kaikki joukkueen PHI pelaajat joilla on vähintään 5 maalia ja vähintään 10 syöttöä__.
 
@@ -282,7 +280,7 @@ Rakentajasi ei ole pakko toimia samalla tavalla.
 
 ## 7. biershopin refaktorointia, osa 1
 
-Repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistosta *viikko3/KumpulaBiershop* löytyy olutkaupan koodi.
+Repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistosta *viikko3/KumpulaBiershop* löytyy olutkaupan koodi.
 
 Komento <code>mvn jetty:run</code> käynnistää ohjelman localhostin porttiin 8080. Jetty:n käynnistäminen aiheuttaa muutaman ikävän virheilmoituksen, mutta ei välitetä niistä.
 
@@ -434,8 +432,8 @@ tee referaatti vielä neljännestä tehtävän 12 artikkelista
 
 tehtävien kirjaus:
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 4.5. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline on XX XX.XX
 
 palaute tehtävistä:
 

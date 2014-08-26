@@ -12,8 +12,8 @@
 
 ## 1. riippuvuuksien injektointi osa 1
 
-* lue ensin tiistain luennolla nopeasti läpikäytyjen asioiden kertaus [https://github.com/mluukkai/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md)
-* hae koodiesimerkit repostitoriosta [https://github.com/mluukkai/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) (hakemistosta viikko2/RiippuvuuksienInjektointi) ja kokeile että kaikki toimivat
+* lue ensin tiistain luennolla nopeasti läpikäytyjen asioiden kertaus [https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md](https://github.com/hy-tktl/ohtu2014/blob/master/web/riippuvuuksien_injektointi.md)
+* hae koodiesimerkit repostitoriosta [https://github.com/hy-tktl/ohtu2014/](https://github.com/hy-tktl/ohtu2014/) (hakemistosta viikko2/RiippuvuuksienInjektointi) ja kokeile että kaikki toimivat
 * järkevintä lienee että kloonaat repositorion paikalliselle koneellesi
   * vaikka viime viikolla sama repositorio forkattiin, ei forkattua repositorioa saa ihan helposti synkronoitua alkuperäiseen
 

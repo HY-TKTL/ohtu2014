@@ -1,8 +1,6 @@
 # Laskari 4 
 
-## Huom: ohjausta tehtävien tekoon to klo 14-16 ja pe klo 14-16 salissa BK107
-
-### Tehtävien palautuksen deadline su 6.4. klo 23.59
+### Tehtävien palautuksen deadline XX XX.XX
 
 ## palautetaan GitHubin kautta
 
@@ -25,7 +23,7 @@ Tutustumme nyt [Mockito-nimiseen](http://code.google.com/p/mockito/) mock-kirjas
 * [Easy Mock](http://www.easymock.org/)
 * [jmock](http://www.jmock.org/)
 
-Hae repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa __viikko4/MockitoDemo__ oleva projekti. Kyseessä on yksinkertaistettu versio Verkkokauppaesimerkistä.
+Hae repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa __viikko4/MockitoDemo__ oleva projekti. Kyseessä on yksinkertaistettu versio Verkkokauppaesimerkistä.
 
 Kaupan toimintaperiaate on yksinkertainen:
 
@@ -113,7 +111,7 @@ Mockiton dokumentaatio: [http://docs.mockito.googlecode.com/hg/latest/org/mockit
 
 ## 2. Yksikkötestaus ja riippuvuudet: Mockito, osa 2
 
-Hae repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa __viikko4/LyyrakorttiMockito__ oleva projekti. Kyseessä on yksinkertaistettu versio ohjelmoinnin perusteista tutusta tehtävästä Kassapääte ja tyhmä lyyrakortti.
+Hae repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa __viikko4/LyyrakorttiMockito__ oleva projekti. Kyseessä on yksinkertaistettu versio ohjelmoinnin perusteista tutusta tehtävästä Kassapääte ja tyhmä lyyrakortti.
 
 Tässä tehtävässä on tarkoitus testata ja täydentää luokkaa <code>Kassapaate</code>. Lyyrakortin koodiin ei tehtävässä saa koskea ollenkaan! Testeissä ei myöskään ole tarkoitus luoda konkreettisia instansseja lyyrakortista, testien tarvitsemat kortit tulee luoda mockitolla.
 
@@ -173,7 +171,7 @@ Korjaa kassapäätettä siten, että määrittelemäsi testit menevät läpi.
 
 Testataan viikolta 2 tutun Verkkokaupan Kauppa-luokkaa
 
-* Spring-versio löytyy [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa viikko2/Verkkokauppa3 (xml:llä konfiguroitu) ja viikko2/Verkkokauppa4 (annotaatioilla konfiguroitu)
+* Spring-versio löytyy [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa viikko2/Verkkokauppa3 (xml:llä konfiguroitu) ja viikko2/Verkkokauppa4 (annotaatioilla konfiguroitu)
 * ota edellisistä jompi kumpi pohjaksi jos et tehnyt tehtävää
 
 Kaupalle injektoidaan konstruktorissa Pankki, Viitelaskuri ja Varasto.
@@ -265,7 +263,7 @@ Tehtävässä oletetaan, että sinulla on 2 repositoria GitHub:issa. Käytetää
 
 jatketaan edellistä
 
-* liitä paikalliseen repositorioosi (edellisen tehtävän A) remoteksi repositorio [git://github.com/mluukkai/ohtu2014.git](git://github.com/mluukkai/ohtu2014.git) esim. nimellä ohtu
+* liitä paikalliseen repositorioosi (edellisen tehtävän A) remoteksi repositorio [git://github.com/hy-tktl/ohtu2014.git](git://github.com/hy-tktl/ohtu2014.git) esim. nimellä ohtu
 * ei pullata ohtu-repossa olevaa tavaraa lokaaliin, vaan tehdään sille oma träkkäävä branchi:
   * anna komennot <code>git fetch ohtu</code> ja <code>git checkout -b ohtu-lokaali ohtu/master</code>
   * varmista komennolla <code>git branch</code> että branchi (nimeltä ohtu-lokaali) syntyi ja että olet branchissa
@@ -303,11 +301,11 @@ Tagit eivät mene automaattisesti etärepositorioihin. Pushaa koodisi githubiin 
 
 Varmista, etä tagit siirtyvät Githubiin:
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko4-1.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko4-1.png)
 
 ## 7. Spring WebMVC
 
-Tarkastellaan edelliseltä viikolta tutun toiminnallisuuden tarjoamaa esimerkkiprojektia joka löytyy repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa __viikko4/LoginWeb2__
+Tarkastellaan edelliseltä viikolta tutun toiminnallisuuden tarjoamaa esimerkkiprojektia joka löytyy repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa __viikko4/LoginWeb2__
 
 Hae projekti ja käynnistä se komennolla
 
@@ -386,7 +384,7 @@ Muuta koodia siten, että läpikäyt seuraavat skenaariot:
 
 ## 9. Web-sovelluksen testaaminen: easyB+Selenium
 
-Pääsemme jälleen käyttämään viime viikolta tuttua [easyB:tä](https://github.com/mluukkai/ohtu2014/blob/master/web/easyb.md). Hakemistosta Other Test Sources/easyb löytyy valmiina User storyn *User can log in with valid username/password-combination* määrittelevä story. Yksi skenaarioista on valmiiksi mäpätty koodiin. Täydennä kaksi muuta skenaariota.
+Pääsemme jälleen käyttämään viime viikolta tuttua [easyB:tä](https://github.com/hy-tktl/ohtu2014/blob/master/web/easyb.md). Hakemistosta Other Test Sources/easyb löytyy valmiina User storyn *User can log in with valid username/password-combination* määrittelevä story. Yksi skenaarioista on valmiiksi mäpätty koodiin. Täydennä kaksi muuta skenaariota.
 
 ## 10. Web-sovelluksen testaaminen osa 2
 
@@ -404,8 +402,8 @@ Löydät tämän Storyn easyB-pohjan viime viikon tehtävistä. Kopioi story pro
 
 tehtävien kirjaus:
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 6.4. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline XX XX.XX
 
 palaute tehtävistä:
 

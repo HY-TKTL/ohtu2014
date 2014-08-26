@@ -1,8 +1,6 @@
 # Laskari 5
 
-## Huom: ohjausta tehtävien tekoon to klo 14-16 ja pe klo 14-16 salissa BK107
-
-### Tehtävien palautuksen deadline su 13.4. klo 23.59
+### Tehtävien palautuksen deadline XX XX.XX
 
 ## palautetaan GitHubin kautta
 
@@ -14,7 +12,7 @@
 
 Maven-projekti konfiguroidaan projektin juuressa olevassa pom.xml-tiedostossa.
 
-Tutkitaan hieman viime viikon tehtävissä 7-11 käytetyn projektin eli repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa __viikko4/LoginWeb2__ olevan projektin pom.xml:in sisältöä.
+Tutkitaan hieman viime viikon tehtävissä 7-11 käytetyn projektin eli repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa __viikko4/LoginWeb2__ olevan projektin pom.xml:in sisältöä.
 
 ``` java
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -297,13 +295,13 @@ Osassa *build* määritellään kääntämiseen liittyvien pluginien toimintaa
 
 ## 2. lisää mavenia: riippuvuuksien lisääminen
 
-Hae repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa viikko5/TyhjaProjekti lähes tyhjän maven-projektin runko.
+Hae repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa viikko5/TyhjaProjekti lähes tyhjän maven-projektin runko.
 
 * mukana on kohta tarvitsemasi luokka __Submission__ 
 
-Tehdään ohjelma jonka avulla voit lukea kurssilla palauttamiesi tehtävien statistiikan osoitteesta [http://ohtustats.herokuapp.com/](http://ohtustats.herokuapp.com/)
+Tehdään ohjelma jonka avulla voit lukea kurssilla palauttamiesi tehtävien statistiikan osoitteesta [http://ohtustats2014.herokuapp.com/](http://ohtustats2014.herokuapp.com/)
 
-Omat palautukset palauttava sivu on __http://ohtustats.herokuapp.com/students/012345678/submissions__, missä __012345678__ siis opiskelijanumerosi. Palvelin palauttaa tietosi [json-muodossa](http://en.wikipedia.org/wiki/JSON)
+Omat palautukset palauttava sivu on __http://ohtustats2014.herokuapp.com/students/012345678/submissions__, missä __012345678__ siis opiskelijanumerosi. Palvelin palauttaa tietosi [json-muodossa](http://en.wikipedia.org/wiki/JSON)
 
 Tavoitteena on tehdä ohjelma, joka ottaa komentoriviparametrina opiskelijanumeron ja tulostaa palautettujen tehtävien statistiikan ihmisystävällisessä muodossa.
 
@@ -340,7 +338,7 @@ public class Main {
             studentNr = args[0];
         }
 
-        String url = "http://ohtustats.herokuapp.com/students/"+studentNr+"/submissions";
+        String url = "http://ohtustats2014.herokuapp.com/students/"+studentNr+"/submissions";
 
         HttpClient client = new HttpClient();
         GetMethod method = new GetMethod(url);
@@ -499,7 +497,7 @@ Oletetaan että olet repositoriossa, jossa on ainakin kaksi branchia: master ja 
 
 ## 5. git: vahingossa tuhotun tiedoston palautus
 
-* viikon 4 [tehtävässä 6](https://github.com/mluukkai/ohtu2014/blob/master/web/laskari4.md#6-git-t%C3%A4git) palasimme jo menneisyyteen checkouttaamalla tagillä merkittyyn kohtaan
+* viikon 4 [tehtävässä 6](https://github.com/hy-tktl/ohtu2014/blob/master/web/laskari4.md#6-git-t%C3%A4git) palasimme jo menneisyyteen checkouttaamalla tagillä merkittyyn kohtaan
 * katsotaan nyt miten voimme palauttaa jonkun menneisyydessä olevan tilanteen uudelleen voimaan
 * tee tiedosto xxx, lisää ja committaa se
 * poista tiedosto ja committaa
@@ -586,8 +584,8 @@ Tämä oli kurssin viimeinen git-tehtävä. Muista pitää git-rutiiniasi yllä 
 
 tehtävien kirjaus:
 
-* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats.herokuapp.com) 
-  * huom: tehtävien palautuksen deadline on su 13.4. klo 23.59
+* Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
+  * huom: tehtävien palautuksen deadline on XX XX.XX
 
 palaute tehtävistä:
 

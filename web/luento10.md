@@ -1,7 +1,7 @@
 ## Pelaajastatistiikkaa Java 8:lla
 
 Muokataan hieman  [viikon 2 laskareissa]
-(https://github.com/mluukkai/ohtu2014/tree/master/viikko2)
+(https://github.com/hy-tktl/ohtu2014/tree/master/viikko2)
 työn alla ollutta NHL-pelaajastatistiikka-ohjelmaa.
 
 ### forEach
@@ -83,7 +83,7 @@ Staattisen importtauksen jälkeen voimme siis tulostaa ruudulle helpommin, kirjo
 
 Luokan <code>Statistics</code> metodit toimivat hyvin samaan tyyliin, ne käyvät läpi pelaajien listan ja palauttavat joko yksittäisen tai useampia pelaajia metodin määrittelemästä kriteeristä riippuen. Jos lisäisimme luokalle samalla periaatteella muita hakutoiminnallisuuksia (esim. kaikkien yli 10 maalia tehneiden pelaajien lista), joutuisimme "copypasteamaan" pelaajat läpikäyvää koodia vielä useampiin metodeihin.
 
-Parempi ratkaisu olisikin ohjelmoida luokalle geneerinen etsintämetodi, joka saa hakukriteerin parametrina. [Edelliseltä viikolta tutut](https://github.com/mluukkai/ohtu2014/blob/master/web/luento8.md#koodissa-olevan-ep%C3%A4triviaalin-copypasten-poistaminen-strategy-patternin-avulla-java-8a-hy%C3%B6dynt%C3%A4v%C3%A4-versio) Java 8:n oliovirrat eli streamit tarjoavat sopivan välineen erilaisten hakujen toteuttamiseen. Streamien [API-kuvaus](http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html).
+Parempi ratkaisu olisikin ohjelmoida luokalle geneerinen etsintämetodi, joka saa hakukriteerin parametrina. [Edelliseltä viikolta tutut](https://github.com/hy-tktl/ohtu2014/blob/master/web/luento8.md#koodissa-olevan-ep%C3%A4triviaalin-copypasten-poistaminen-strategy-patternin-avulla-java-8a-hy%C3%B6dynt%C3%A4v%C3%A4-versio) Java 8:n oliovirrat eli streamit tarjoavat sopivan välineen erilaisten hakujen toteuttamiseen. Streamien [API-kuvaus](http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html).
 
 Muutetaan ensin metodi <code>List&#60;Player> team(String teamName)</code> käyttämään stream-apia:
 
@@ -297,7 +297,7 @@ Metodi <code>reduce</code> saa parametrikseen lambda-lausekkeen joka saa ensimm�
 
 ## Builder revisited
 
-Luennolla 9 toteutettiin monimutkaisen olion luomista helpottava [rakentaja](https://github.com/mluukkai/ohtu2014/blob/master/web/luento9.md#pinorakentaja). Rakentajan toteutuksessa kiinnitettiin erityisesti huomiota rajapinnan sujuvuuteen:
+Luennolla 9 toteutettiin monimutkaisen olion luomista helpottava [rakentaja](https://github.com/hy-tktl/ohtu2014/blob/master/web/luento9.md#pinorakentaja). Rakentajan toteutuksessa kiinnitettiin erityisesti huomiota rajapinnan sujuvuuteen:
 
 ``` java
 Pinorakentaja rakenna = new Pinorakentaja();
