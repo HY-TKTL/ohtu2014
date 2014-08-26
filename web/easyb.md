@@ -9,10 +9,10 @@ Lue ensin [http://www.javaworld.com/javaworld/jw-09-2008/jw-09-easyb.html](http:
 * sivun 3 storyt ja niitä testaavat _skenaariot_ (given... when... then) on käyttämämme tekniikka
 * sivun 4 "Running easyB" voit skipata, ajamme easyB:tä mavenin kautta
 
-Tarkastellaan esimerkkiprojektia joka löytyy repositorion [https://github.com/mluukkai/ohtu2014](https://github.com/mluukkai/ohtu2014) hakemistossa __viikko3/LoginEasyB1__
+Tarkastellaan esimerkkiprojektia joka löytyy repositorion [https://github.com/hy-tktl/ohtu2014](https://github.com/hy-tktl/ohtu2014) hakemistossa __viikko3/LoginEasyB1__
 
 Tutustu olevan ohjelman rakenteeseen 
-* käynnistä ohjelma <code>mvn exec ...</code> -komennolla (ks. [viikon 1 laskarit](https://github.com/mluukkai/ohtu2014/blob/master/web/laskari1.md#5-maven))
+* käynnistä ohjelma <code>mvn exec ...</code> -komennolla (ks. [viikon 1 laskarit](https://github.com/hy-tktl/ohtu2014/blob/master/web/laskari1.md#5-maven))
 * ohjelman tuntemat komennot ovat __login__ ja __new__
 
 Testit on kirjoitettu hakemistoon _src/main/test/easyb_ tekstietiedostoina, joilla on pääte .story. NetBeansissa easyB-testitiedostot löytyvät kohdan _Other Test Sources_ alta.
@@ -87,7 +87,7 @@ Jos testit eivät mene läpi, nähdään ikävämpää tekstiä.
 
 easyB:n konfiguraatiossa sanoimme, että testien tulokset tulee raportoida html-muodossa tiedostossa _target/easyb/easyb-report.html_
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko3-1.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko3-1.png)
 
 
 Aja testit ja avaa tiedosto selaimellasi.
@@ -227,7 +227,7 @@ Lisää should:ista löytyy easyB:n sivulta, mm. [http://www.easyb.org/dsls.html
 
 NetBeans ei osaa tehdä minkäänlaista syntaksitarkastusta _.story_-päätteisille tiedostoille. Jos asennat NB:hen Groovy and Grails -pluginin (ks. tools/plugins) _ja_ nimeät storytiedostot loppumaan päätteeseen _Story.groovy_ (esim. logging_in_Story.groovy, huomaa iso S!) saat NB:hen hieman paremman syntaksitarkastuksen. Tosin ihan ongelmaton syntaksitarkastus ei ole vaan se ilmoittaa aiheetomasti tiettyjen luokkien näkymättömyydestä:
 
-![kuva](https://github.com/mluukkai/ohtu2014/raw/master/images/viikko3-2.png)
+![kuva](https://github.com/hy-tktl/ohtu2014/raw/master/images/viikko3-2.png)
 
 ## DAO-suunnittelumalli
 
