@@ -1,6 +1,6 @@
 # Laskari 3
 
-### Tehtävien palautuksen deadline XX XX.XX
+### Tehtävien palautuksen deadline 21.9 klo 23.59
 
 ## palautetaan GitHubin kautta
 
