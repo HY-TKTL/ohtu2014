@@ -1,6 +1,6 @@
 # Laskari 1
 
-### Tehtävien palautuksen deadline XX klo XX.XX
+### Tehtävien palautuksen deadline su 7.9 klo 23.59.
 
 ## Miten viikon 1 tehtävät palautetaan?
 
