@@ -100,6 +100,6 @@ public class VarastoTest {
     @Test
     public void otaLiikaa(){
         
-        assertEquals(1,varasto.otaVarastosta(20),vertailuTarkkuus);
+        assertEquals(0,varasto.otaVarastosta(20),vertailuTarkkuus);
     }
 }
