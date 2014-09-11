@@ -1,22 +1,17 @@
 package ohtu.verkkokauppa;
 
-public class Pankki {
+public class Pankki implements Bank {
+    private Accounting kirjanpito;
 
-    private static Pankki instanssi;
-
-    public static Pankki getInstance() {
-        if (instanssi == null) {
-            instanssi = new Pankki();
-        }
-
-        return instanssi;
-    }
-    private Kirjanpito kirjanpito;
-
-    private Pankki() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Pankki(Accounting kirja) {
+        kirjanpito = kirja;
     }
 
+    public Accounting getKirjanpito() {
+        return kirjanpito;
+    }
+
+    @Override
     public boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa) {
         kirjanpito.lisaaTapahtuma("tilisiirto: tililtä " + tilille + " tilille " + tilille
                 + " viite " + viitenumero + " summa " + summa + "e");

@@ -12,4 +12,15 @@
                 <exec.classpathScope>runtime</exec.classpathScope>
             </properties>
         </action>
+        <action>
+            <actionName>test.single</actionName>
+            <goals>
+                <goal>test-compile</goal>
+                <goal>surefire:test</goal>
+                <goal>cobertura:cobertura</goal>
+            </goals>
+            <properties>
+                <test>${packageClassName}</test>
+            </properties>
+        </action>
     </actions>
