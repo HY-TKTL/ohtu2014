@@ -4,8 +4,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import ohtuesimerkki.Reader;
 
-public class PlayerReader {
+public class PlayerReader implements Reader {
 
     private Scanner scanner;
 
@@ -17,8 +18,14 @@ public class PlayerReader {
             e.printStackTrace();
         }
     }
+    
+    private int extractInt(String str) {
+        return Integer.parseInt(str.trim());
+    }
 
-    public List<Player> getPlayers() {
+    @Override
+    public List getPlayers() {
+        
         ArrayList<Player> players = new ArrayList<Player>();
 
         while (scanner.hasNextLine()) {
@@ -30,9 +37,5 @@ public class PlayerReader {
         }
 
         return players;
-    }
-
-    private int extractInt(String str) {
-        return Integer.parseInt(str.trim());
     }
 }
