@@ -15,6 +15,15 @@ public class Kauppa {
         kaupanTili = "33333-44455";
     }
 
+    public Kauppa(Varasto instance, Pankki instance0, Viitegeneraattori instance1) {
+        
+        VarastoI varasto = instance;
+        PankkiI pankki = instance0;
+        ViiteI viitegeneraattori = instance1;
+        kaupanTili = "33333-44455";
+        
+    }
+
     public void aloitaAsiointi() {
         ostoskori = new Ostoskori();
     }
