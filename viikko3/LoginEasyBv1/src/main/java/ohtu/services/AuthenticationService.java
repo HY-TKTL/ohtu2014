@@ -1,8 +1,6 @@
 package ohtu.services;
 
 import ohtu.domain.User;
-import java.util.ArrayList;
-import java.util.List;
 import ohtu.data_access.UserDao;
 
 public class AuthenticationService {
@@ -25,6 +23,7 @@ public class AuthenticationService {
     }
 
     public boolean createUser(String username, String password) {
+        
         if (userDao.findByName(username) != null) {
             return false;
         }
@@ -39,8 +38,41 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
-        // validity check of username and password
+        System.out.println(username);
 
+        if (password.length()<=8) {
+
+            return true;
+        }
+
+        if (noUpperCase(password)) {
+
+            return true;
+        }
+
+        if (noNumber(password)) {
+
+            return true;
+        }
         return false;
+    }
+
+    private boolean noNumber(String password) {
+        for (char c : password.toCharArray()) {
+            if (Character.isDigit(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean noUpperCase(String password) {
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                return false;
+            }
+        }
+        return true;
+        
     }
 }
