@@ -147,7 +147,7 @@ tehtävien kirjaus:
 * Kirjaa tekemäsi tehtävät [tänne](http://ohtustats2014.herokuapp.com) 
   * huom: tehtävien palautuksen deadline on XX XX.XX
 
-palaute tehtävistä:
+vapaaehtoinen palaute tehtävistä:
 
 * Lisää viikon 1 tehtävässä 11 forkaamasi repositorion omalla nimelläsi olevaan hakemistoon tiedosto nimeltä viikko3
 * tee viime viikon tehtävän tapaan pull-request
