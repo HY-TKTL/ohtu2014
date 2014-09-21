@@ -24,9 +24,19 @@ scenario "user can login with correct password", {
 }
 
 scenario "user can not login with incorrect password", {
-    given 'command login selected'
-    when 'a valid username and incorrect password are entered'
-    then 'user will not be logged in to system'
+    given 'command login selected', {
+       userDao = new InMemoryUserDao()
+       auth = new AuthenticationService(userDao)
+       io = new StubIO("login", "pekka", "akkep") 
+       app = new App(io, auth)
+    }
+    when 'a valid username and incorrect password are entered', {
+       app.run()
+    }
+
+    then 'user will not be logged in to system', {
+       io.getPrints().shouldHave("logged in")
+    }
 }
 
 scenario "nonexistent user can not login to ", {
