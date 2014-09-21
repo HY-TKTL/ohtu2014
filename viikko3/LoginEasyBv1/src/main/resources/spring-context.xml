@@ -10,6 +10,19 @@
             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
     
     <context:annotation-config />
-    <context:component-scan base-package="ohtu" />  
+    <bean id="FileUserDAO" class="ohtu.data_access.FileUserDAO">
+         <constructor-arg index="0" value="salasanat.txt"/>
+    </bean>
+    <bean id="AuthenticationService" class="ohtu.services.AuthenticationService">
+        <constructor-arg ref="FileUserDAO" />
+    </bean>
+    <bean id="ConsoleIO" class="ohtu.io.ConsoleIO">
+    </bean>
+    
+    <bean id="App" class="ohtu.App">
+        <constructor-arg ref="ConsoleIO" />
+        <constructor-arg ref="AuthenticationService" />
+    </bean>
+    
     
 </beans>
