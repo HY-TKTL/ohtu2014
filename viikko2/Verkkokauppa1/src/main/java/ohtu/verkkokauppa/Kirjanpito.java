@@ -1,30 +1,24 @@
-
 package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
+import org.springframework.stereotype.Component;
 
-public class Kirjanpito {
-    private static Kirjanpito instance;
+@Component
+public class Kirjanpito implements IKirjanpito {
 
-    public static Kirjanpito getInstance() {
-        if ( instance==null) {
-            instance = new Kirjanpito();
-        }
+  private ArrayList<String> tapahtumat;
 
-        return instance;
-    }
+  public Kirjanpito() {
+    tapahtumat = new ArrayList<String>();
+  }
 
-    private ArrayList<String> tapahtumat;
+  @Override
+  public void lisaaTapahtuma(String tapahtuma) {
+    tapahtumat.add(tapahtuma);
+  }
 
-    private Kirjanpito() {
-        tapahtumat = new ArrayList<String>();
-    }
-
-    public void lisaaTapahtuma(String tapahtuma) {
-        tapahtumat.add(tapahtuma);
-    }
-
-    public ArrayList<String> getTapahtumat() {
-        return tapahtumat;
-    }
+  @Override
+  public ArrayList<String> getTapahtumat() {
+    return tapahtumat;
+  }
 }
