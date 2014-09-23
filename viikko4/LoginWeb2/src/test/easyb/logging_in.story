@@ -66,3 +66,48 @@ scenario "nonexistent user can not login to system", {
         driver.getPageSource().contains("Welcome to Ohtu Application!").shouldBe false
     }
 }
+
+scenario "new user creation works", {
+    given 'command new user', {
+        driver = new HtmlUnitDriver();
+        driver.get("http://localhost:8090");
+        element = driver.findElement(By.linkText("register new user"));       
+        element.click(); 
+    }
+    when 'valid user pw', {
+        element = driver.findElement(By.name("username"));
+        element.sendKeys("nicememe");
+        element = driver.findElement(By.name("password"));
+        element.sendKeys("nicememe1");
+        element = driver.findElement(By.name("confirm password"));
+        element.sendKeys("nicememe1");
+        element = driver.findElement(By.name("add"));
+        element.submit()
+    }
+    then 'logged in', {
+        driver.getPageSource().contains("Welcome to Ohtu Application!").shouldBe true
+    }
+}
+
+
+scenario "new user creation doesnt work", {
+    given 'command new user', {
+        driver = new HtmlUnitDriver();
+        driver.get("http://localhost:8090");
+        element = driver.findElement(By.linkText("register new user"));       
+        element.click(); 
+    }
+    when 'not matching user pw', {
+        element = driver.findElement(By.name("username"));
+        element.sendKeys("nicememe");
+        element = driver.findElement(By.name("password"));
+        element.sendKeys("nicememe1");
+        element = driver.findElement(By.name("confirm password"));
+        element.sendKeys("nicememe2");
+        element = driver.findElement(By.name("add"));
+        element.submit()
+    }
+    then 'not logged in', {
+        driver.getPageSource().contains("Welcome to Ohtu Application!").shouldBe false
+    }
+}
