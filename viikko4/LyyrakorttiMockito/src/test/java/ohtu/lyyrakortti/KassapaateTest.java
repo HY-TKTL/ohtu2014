@@ -45,4 +45,13 @@ public class KassapaateTest {
         verify(kortti, times(1)).getSaldo();
         verify(kortti, times(0)).osta(anyInt());
     }
+    
+    @Test
+    public void latausToimii() {
+        kortti.lataa(-2);
+        verify(kortti.getSaldo() == 0);
+        
+        kortti.lataa(2);
+        verify(kortti.getSaldo() == 2);
+    }
 }
