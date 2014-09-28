@@ -1,35 +1,35 @@
-
 package ohtu.verkkokauppa;
 
 public class Tuote {
-    private int id;
-    private String nimi;
-    private int hinta;
 
-    public Tuote(int id, String nimi, int hinta) {
-        this.id = id;
-        this.nimi = nimi;
-        this.hinta = hinta;
-    }
+  private int id;
+  private String nimi;
+  private int hinta;
 
-    @Override
-    public boolean equals(Object o) {
-        Tuote t = (Tuote)o;
-        
-        return id==t.id;
-    }
+  public Tuote(int id, String nimi, int hinta) {
+    this.id = id;
+    this.nimi = nimi;
+    this.hinta = hinta;
+  }
 
-    public int getId() {
-        return id;
-    }
+  @Override
+  public boolean equals(Object o) {
+    Tuote t = (Tuote) o;
 
-    public int getHinta() {
-        return hinta;
-    }
+    return id == t.id;
+  }
 
-    @Override
-    public String toString() {
-        return nimi;
-    }            
-    
+  public int getId() {
+    return id;
+  }
+
+  public int getHinta() {
+    return hinta;
+  }
+
+  @Override
+  public String toString() {
+    return nimi;
+  }
+
 }
