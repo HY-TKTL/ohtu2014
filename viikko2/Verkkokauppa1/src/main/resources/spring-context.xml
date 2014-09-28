@@ -10,9 +10,4 @@
     <context:annotation-config />
     <context:component-scan base-package="ohtu.verkkokauppa" />  
     
-    <bean id="kirjanpito" class="ohtu.verkkokauppa.kirjanpito">
-    </bean>
-    
-    
-    
 </beans>
