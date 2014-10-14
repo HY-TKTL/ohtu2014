@@ -26,7 +26,7 @@ public class VarastoTest {
     @Test
     public void kahtaSamannimistaEiVoiLisata() {
         boolean ok = varasto.lisaaTuote("Koff", 3, 10);
-        
+        ok = varasto.lisaaTuote("Koff", 3, 10);
         assertFalse(ok);
         assertEquals( 1, tuotteitaVarastossa("Koff") );        
     }

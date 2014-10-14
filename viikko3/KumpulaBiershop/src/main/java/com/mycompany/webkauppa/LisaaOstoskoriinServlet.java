@@ -14,9 +14,8 @@ public class LisaaOstoskoriinServlet extends WebKauppaServlet {
             throws ServletException, IOException {
                 
         long tuoteId = Long.parseLong( request.getParameter("tuoteId") );
-                        
-        OstoksenLisaysKoriin lisays = new OstoksenLisaysKoriin(haeSessionOstoskori(request), tuoteId);
-        lisays.suorita();
+                       
+        komennot.ostoksenLisaysKoriin(haeSessionOstoskori(request), tuoteId).suorita();
         
         naytaSivu("/Tuotelista", request, response);   
     }

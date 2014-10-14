@@ -12,9 +12,8 @@ public class PoistaOstoskoristaServlet extends WebKauppaServlet {
             throws ServletException, IOException {
                 
         long tuoteId = Long.parseLong( request.getParameter("tuoteId") );
-        
-        OstoksenPoistoKorista poisto = new OstoksenPoistoKorista(haeSessionOstoskori(request),  tuoteId );          
-        poisto.suorita();        
+         
+        komennot.ostoksenPoistoKorista(haeSessionOstoskori(request),  tuoteId).suorita();     
         
         naytaSivu("/MaksaOstokset", request, response);
     }
