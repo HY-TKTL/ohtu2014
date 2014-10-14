@@ -4,7 +4,7 @@ import com.mycompany.webkauppa.sovelluslogiikka.Ostoskori;
 import com.mycompany.webkauppa.sovelluslogiikka.Tuote;
 import com.mycompany.webkauppa.sovelluslogiikka.Varasto;
 
-public class OstoksenLisaysKoriin {
+public class OstoksenLisaysKoriin implements Komento {
 
     private Ostoskori ostoskori;
     private long tuoteId;
@@ -16,15 +16,16 @@ public class OstoksenLisaysKoriin {
         this.varasto = Varasto.getInstance();
     }
 
-    public void suorita() {
+    public boolean suorita() {
         boolean saatiinTuote = varasto.otaVarastosta(tuoteId);
         
         if (!saatiinTuote) {
-            return;
+            return false;
         }
        
         Tuote tuote = varasto.etsiTuote(tuoteId);                      
         ostoskori.lisaaTuote(tuote);                
+        return true;
 
     }
 }

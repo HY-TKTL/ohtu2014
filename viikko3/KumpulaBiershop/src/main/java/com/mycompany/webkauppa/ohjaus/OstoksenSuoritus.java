@@ -3,7 +3,7 @@ package com.mycompany.webkauppa.ohjaus;
 import com.mycompany.webkauppa.sovelluslogiikka.*;
 import com.mycompany.webkauppa.ulkoiset_rajapinnat.*;
 
-public class OstoksenSuoritus {
+public class OstoksenSuoritus implements Komento{
 
     private PankkiFasaadi pankki;
     private ToimitusjarjestelmaFasaadi toimitusjarjestelma;
